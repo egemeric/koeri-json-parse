@@ -3,7 +3,20 @@
 this python script program gets last earthquakes in Turkey data from "http://www.koeri.boun.edu.tr/scripts/lst0.asp"  it parses and converts to json
 if you want to print screen you can run print_to_screen.py
 or you can access directly [http://api.egemeric.gen.tr/deprem.php](http://api.egemeric.gen.tr/deprem.php)
+# You can print data with shell_exec() function with php
 
+```bash
+
+<?php
+
+$command = escapeshellcmd('python3 /var/www/api.egemeric.gen.tr/koeri-json-parse/parse.py');
+$output = shell_exec($command);
+echo $output;
+
+?>
+
+
+```
 ## requirements
 
 ```bash
