@@ -54,5 +54,9 @@ def main():
     final=get_json(dat_json)
     return final
 if __name__ == '__main__':
-    main()
+    print(main())
+    
+    
 
+else:
+    print("ok")
