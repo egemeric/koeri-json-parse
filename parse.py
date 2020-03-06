@@ -52,7 +52,6 @@ def main():
     parse_=get_html_line(get_content())
     dat_json=create_dict(parse_)
     final=get_json(dat_json)
-    print(final)
     return final
 if __name__ == '__main__':
     main()

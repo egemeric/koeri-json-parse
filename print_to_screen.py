@@ -49,5 +49,6 @@ def get_quakes():
 
 ana_list=create_list(get_json(get_quakes()))
 sorted_list=sort_magnitude(ana_list)
+print("Earthquakes with magnetude bigger than 3.5:")
 print_touser(sorted_list,"")
 
